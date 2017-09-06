@@ -11,16 +11,16 @@
 
 <body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container-fluid" id="masthead">
         <div class="col-sm-1">
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-6">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Majid Shojaee</a>
+              <a class="navbar-brand" href="index.html" id="logo">Majid Shojaee</a>
             </div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">About</a></li>
@@ -35,69 +35,57 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="main">
             <div class="col-sm-1">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-6" id="content">
                 <div class="page-header">
                     <h1>Contact Me</h1>
                 </div>
-            </div>
-            <div class="col-sm-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-8">
                 <div class="row">
-                    <form>
-                        <div class="form-group row">
-                          <label for="inputEmail3" class="col-sm-2 form-control-label">Name</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-2 form-control-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-2 form-control-label">Message</label>
-                          <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-8">
+                        <form id="contact-form">
+                                <ul>
+                                    <li>
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name"  id="name" placeholder="John Smith" required="required">
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email"  id="email" placeholder="example@gmail.com" required="required">
+                                    </li>
+                                    <li>
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" required="required"></textarea> 
+                                    </li>
+                                </ul>
+                                <input type="submit" name="submit">
+                            </form>  
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-2">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Connect with me</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="col-sm-4">
-                                <a href="https://github.com/maxsho" target="_blank"> <img src="assets/images/Github.png" alt="https://github.com/maxsho" style="width:40px;height:40px;"></a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a href="https://www.linkedin.com/in/majidshojaee/" target="_blank"> <img src="assets/images/Linkedin.png" alt="https://www.linkedin.com/in/majidshojaee/" style="width:40px;height:40px;"></a>   
-                            </div>
-                            <div class="col-sm-4">
-                                   <a href="https://stackoverflow.com/users/8454000/majid" target="_blank"><img src="assets/images/Stack.png" alt="https://stackoverflow.com/users/8454000/majid" style="width:40px;height:40px;"></a>
-                            </div>
-                        </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default" id="sidebar">
+                    <div class="panel-heading">
+                        <h3>Connect with me</h3>
                     </div>
+                    <div class="panel-body">
+                        <a href="https://github.com/maxsho" target="_blank"> <img src="assets/images/Github.png" alt="https://github.com/maxsho" id="social"></a>
+                        <a href="https://www.linkedin.com/in/majidshojaee/" target="_blank"> <img src="assets/images/Linkedin.png" alt="https://www.linkedin.com/in/majidshojaee/" id="social"></a>   
+                        <a href="https://stackoverflow.com/users/8454000/majid" target="_blank"><img src="assets/images/Stack.png" alt="https://stackoverflow.com/users/8454000/majid" id="social"></a>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-1">
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-footer">&copy; Copyright 2017 Majid Shojaee</div>
-        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-footer">&copy; Copyright 2017 Majid Shojaee</div>
     </div>
 </body>
 </html>
